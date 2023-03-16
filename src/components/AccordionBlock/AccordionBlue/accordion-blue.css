@@ -1,0 +1,267 @@
+
+.accordionBlue {
+	color: #FFFFFF;
+}
+.accordionBlue__header-text {
+	font-family: 'TT Norms';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 35px;
+	max-width: 400px;
+	margin-bottom: 20px;
+}
+.accordionBlue__body {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: all .7s;
+}
+.show {
+	max-height: 1000px;
+	opacity: 1;
+	transition: all .7s;
+	display: flex;
+	justify-content: space-between;
+}
+.accordion__body-row {
+	display: flex;
+	align-items: flex-end;
+	gap: 60px;
+	margin-bottom: 14px;
+}
+.accordion__body-col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 28px;
+}
+
+.accordion__body-number {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 28px;
+}
+.acc__img-wrap {
+	width: 100%;
+}
+.img__last {
+	width: 170px;
+}
+.acc__img {
+	width: 100%;
+	display: block;
+}
+.acc__number {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 47px;
+}
+.acc__forum-info {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	margin-top: 15px;
+}
+.acc__number--green {
+	color: #00B5A5;
+}
+.acc__footer {
+	display: flex;
+	padding-bottom: 80px;
+}
+.acc__inner {
+	padding-top: 14px;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 25px;
+	border-top: 2px solid #FFFFFF;
+	margin-left: 13%;
+}
+.flower {
+	min-width: 22rem;
+}
+
+
+
+@media screen and (max-width: 1360px) {
+	/* .accordion__title {
+		font-size: 80px;
+		line-height: 95px;
+	} */
+	.accordionBlue__header-text {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.img__last {
+		width: 150px;
+	}
+	.acc__number {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.acc__forum-info {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.accordion__body-row {
+		gap: 40px;
+	}
+	.acc__inner {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1160px) {
+	.accordion__body-row {
+		gap: 25px;
+	}
+	.accordionBlue__title {
+		font-size: 65px;
+		line-height: 88px;
+	}
+	.accordionBlue__header-text {
+		font-size: 19px;
+		line-height: 25px;
+		max-width: 250px;
+	}
+	.acc__number {
+		font-size: 24px;
+		line-height: 22px;
+	}
+	.acc__forum-info {
+		font-size: 14px;
+	}
+	.img__last {
+		width: 100%;
+	}
+	.acc__inner {
+		font-size: 14px;
+	}
+	.acc__forum-info {
+		margin-top: auto;
+	}
+}
+@media screen and (max-width: 850px) {
+	
+	.accordionBlue__arrow {
+		transform: rotate(-90deg);
+		margin-bottom: 10px;
+	}
+	.accordionBlue__title {
+		font-size: 56px;
+		line-height: 75px;
+	}
+	.accordionBlue__header-text {
+		display: none;
+	}
+	.acc__number {
+		font-size: 30px;
+		line-height: 37px;
+	}
+	.acc__forum-info {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.flower {
+		display: none;
+	}
+	.acc__img-wrap {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.show {
+		position: fixed;
+		top: 100px;
+		left: 0;
+		bottom: 0;
+		z-index: 15;
+		overflow-y: scroll;
+		max-width: 100%;
+	}
+	.wrap {
+		background: #075066;
+		padding: 20px 0 40px;
+		flex-direction: column;
+		justify-content: flex-start;
+		min-height: 100vh;
+    height: 100%;
+		overflow-y: scroll;
+	}
+	.accordionBlue__body {
+		position: fixed;
+		left: 100%;
+	} 
+	.accordion__body-col:first-child {
+		border: none;
+		align-self: flex-start;
+	}
+	.accordion__body-col {
+		border: 2px solid #FFFFFF;
+		border-radius: 30px;
+		position: relative;
+		padding: 95px 0 30px;
+	}
+	.accordion__body-col:nth-child(3) {
+		border: 2px solid #00B5A5;
+		border: none;
+		background: #00B5A5;
+	}
+	.accordion__body-col:nth-child(4) {
+		border: 2px solid #00B5A5;
+		border: none;
+		background: #00B5A5;
+	}
+	.accordion__body-col:nth-child(5) {
+		border: 2px solid #F4A276;
+		border: none;
+		background: #F4A276;
+	}
+	.acc__number--orange {
+		color: #F4A276;
+	}
+	.acc__number--white {
+		color: inherit;
+	}
+	.mobile-util {
+		min-width: 200px;
+		align-items: center;
+		margin-top: 25px;
+	}
+	.acc__img-wrap {
+		position: absolute;
+		top: -25px;
+		left: 50px;
+	}
+	.img__util {
+		top: -45px;
+	}
+	.img__util-last {
+		top: -55px;
+	}
+	.acc__img {
+		width: 70%;
+	}
+	.accordion__body-number {
+		align-items: center;
+	}
+	.accordion__body-row {
+		padding-top: 30px;
+		overflow-y: hidden;
+		margin-bottom: 26px;
+		position: relative;
+		right: -20px;
+	}
+	.accordionBlue__title {
+		font-size: 46px;
+	}
+	.acc__inner {
+		margin-left: 0;
+		text-align: center;
+	}
+
+}
+

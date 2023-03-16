@@ -1,0 +1,133 @@
+
+.promo {
+	background: #00B5A5;
+	color: #FFFFFF;
+	position: relative;
+}
+.promo__row {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 55px;
+}
+.promo__col:first-child {
+	padding-top: 125px;
+	margin-right: 100px;
+	padding-bottom: 18px;
+}
+.promo__title {
+	font-family: 'Ristretto Pro';
+	font-weight: 700;
+	font-size: 150px;
+	line-height: 174px;
+}
+.promo__subtitle {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 28px;
+}
+.promo__subtitle span{
+	text-transform: uppercase;
+	background: #E84F35;
+	border-radius: 40px;
+	padding: 10px 20px;
+}
+.promo__text {
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 41px;
+	margin-bottom: 80px;
+}
+.btn-buy-token {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 35px;
+	background: #E84F35;
+	transition: all 0.2s ease-in-out;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 90px 8px 30px;
+}
+.btn-buy-token:hover {
+	background: #F4A276;
+}
+.promo__col:last-child {
+	position: relative;
+	top: 6%;
+}
+
+@media screen and (max-width: 1360px) {
+	.promo__title {
+		font-size: 140px;
+		line-height: 164px;
+	}
+	.promo__text {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.promo__title {
+		font-size: 130px;
+		line-height: 154px;
+	}
+	.promo__text {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	.promo__row {
+		gap: 0;
+	}
+	.promo__title {
+		font-size: 92px;
+		line-height: 140px;
+	}
+	.promo__col:first-child {
+		padding-top: 60px;
+	}
+	.promo__subtitle {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.promo__text {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.promo__img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 850px) {
+	.promo__col:first-child {
+		padding-top: 30px;
+		margin-right: 0;
+	}
+	.promo__title {
+    font-size: 75px;
+    line-height: 85px;
+	}
+	.promo__subtitle span{
+		padding: 5px 15px;
+	}
+	.promo__text {
+		font-size: 18px;
+		line-height: 23px;
+		margin-bottom: 40px;
+	}
+	.btn-buy-token {
+    font-size: 26px;
+    padding: 15px 60px 4px 15px;
+	}
+}
+@media screen and (max-width: 630px) {
+	.promo__row {
+		grid-template-columns: 1fr;
+	}
+	.promo__col:last-child {
+		display: none;
+	}
+}

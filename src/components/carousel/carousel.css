@@ -1,0 +1,32 @@
+
+.slider__item {
+	background: #E9EFEE;
+	border-radius: 16px;
+	padding: 24px 32px;
+	margin-right: 16px;
+}
+.slider__title {
+	margin: 0;
+	font-size: 26px;
+	line-height: 36px;
+	color: #088567;
+	margin-bottom: 32px;
+}
+.slick-list {
+	left: 35px;
+}
+.slick-next:before {
+	content: '';
+}
+.slick-prev:before {
+	content: '';
+}
+@media screen and (max-width: 1360px) {
+	.slick-list {
+		left: 10px;
+	}
+	.slider__title {
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+}
